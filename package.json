@@ -1,11 +1,19 @@
 {
+  "name": "practice-project-1",
+  "version": "1.0.0",
+  "description": "This Repo Only For Keeping My Learning Work. <a href=\"https://darksky4you.github.io/Tailwind-Clonify/\">Live Website Here</a>",
+  "main": "tailwind.config.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build:css": "npx tailwindcss -i main.css -o style.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
     "vite": "^5.3.3"
-  }
+  },
+  "keywords": [],
+  "author": "OBITO",
+  "license": "ISC"
 }
