@@ -1,100 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clony | Lets clone your dream!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-slate-900">
-    <nav
-      class="flex bg-purple-600 justify-between px-20 items-center text-white"
-    >
-      <h1 class="text-2xl">Clonify</h1>
-      <ul class="flex my-4 gap-14">
-        <li class="cursor-pointer hover:text-yellow-300">Home</li>
-        <li class="cursor-pointer hover:text-yellow-300">How to?</li>
-        <li class="cursor-pointer hover:text-yellow-300">About</li>
-      </ul>
-    </nav>
 
-    <main class="container pt-40 w-8/12 px-10 text-white">
-      <div class="mb-7">
-        <span class="text-5xl font-bold"
-          >Wanna Clone<span class="text-purple-600 text-5xl font-bold">
-            Yourself?</span
-          ></span
-        >
-      </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
-        nobis, pariatur ipsum molestias repellendus consequatur molestiae in
-        quia, ullam eius debitis! Praesentium ducimus quidem vitae. Doloribus
-        qui eaque praesentium distinctio.
-      </p>
-      <button class="bg-purple-600 my-7 px-6 py-2 rounded-md text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clony | Lets clone your dream!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-color-accent: #11adeb;
+    }
+
+    body {
+      background-color: #051c0b;
+    }
+
+    #accentBackground {
+      background-color: var(--primary-color-accent);
+    }
+
+    #accent {
+      color: var(--primary-color-accent);
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="accentBackground" class="flex justify-between px-20 items-center text-white">
+    <h1 class="text-2xl">Clonify</h1>
+    <ul class="flex my-4 gap-14">
+      <li class="cursor-pointer hover:text-yellow-300">Home</li>
+      <li class="cursor-pointer hover:text-yellow-300">How to?</li>
+      <li class="cursor-pointer hover:text-yellow-300">About</li>
+    </ul>
+  </nav>
+
+  <main class="container pt-40 w-8/12 px-10 text-white">
+    <div class="mb-7">
+      <span class="text-5xl font-bold">Wanna Clone<span id="accent">
+          Yourself?</span></span>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
+      nobis, pariatur ipsum molestias repellendus consequatur molestiae in
+      quia, ullam eius debitis! Praesentium ducimus quidem vitae. Doloribus
+      qui eaque praesentium distinctio.
+    </p>
+    
+    <button id="clonenow" class="mt-7">
+      <span id="accentBackground" class="px-6 py-2 rounded-md text-white">
         Clone Now
-      </button>
-    </main>
-    <main
-      class="bg-purple-600 w-12/12 mt-32 items-center flex justify-center flex-col"
-    >
-      <h1 class="text-4xl font-medium text-white mt-4">How to Clone?</h1>
-      <p class="text-gray-200 w-4/6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus omnis iusto rerum voluptate et obcaecati nesciunt dolorem esse ut perspiciatis illum fugiat, magni magnam excepturi dicta rem sunt ex ipsum? Recusandae, totam! Ducimus quos, dolore eaque illum necessitatibus aspernatur.</p>
-      <div class="grid md:grid-cols-3 gap-14 mb-16 mt-5">
-        <div
-          class="bg-purple-300 w-60 flex flex-col justify-center items-center p-7  rounded-xl"
-        >
-          <img class="h-20 mb-1" src="images/ic_box.svg" alt="" />
-          <h2 class="text-3xl font-medium mb-2">Starting</h2>
-          <p class="text-slate-600 text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-            id modi nostrum aut quod error voluptatibus perferendis quisquam
-            facere autem.
-          </p>
-        </div>
-        <div
-          class="bg-purple-300 w-60 flex flex-col justify-center items-center p-7 rounded-xl"
-        >
-          <img class="h-20  mb-1" src="images/ic_add.svg" alt="" />
-          <h2 class="text-3xl font-medium mb-2">Mid-Step</h2>
-          <p class="text-slate-600 text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-            id modi nostrum aut quod error voluptatibus perferendis quisquam
-            facere autem.
-          </p>
-        </div>
-        <div
-          class="bg-purple-300 w-60 flex flex-col justify-center items-center p-7 rounded-xl"
-        >
-          <img class="h-20  mb-1" src="images/ic_flash.svg" alt="" />
-          <h2 class="text-3xl font-medium mb-2">Finalize</h2>
-          <p class="text-slate-600 text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-            id modi nostrum aut quod error voluptatibus perferendis quisquam
-            facere autem.
-          </p>
-        </div>
+      </span>
+      
+    </button>
+  </main>
+  <main id="accentBackground" class=" w-12/12 mt-32 items-center flex justify-center flex-col">
+    <h1 class="text-4xl font-medium text-white mt-4">How to Clone?</h1>
+    <p class="text-gray-200 w-4/6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus
+      omnis iusto rerum voluptate et obcaecati nesciunt dolorem esse ut perspiciatis illum fugiat, magni magnam
+      excepturi dicta rem sunt ex ipsum? Recusandae, totam! Ducimus quos, dolore eaque illum necessitatibus aspernatur.
+    </p>
+    <div class="grid md:grid-cols-3 gap-14 mb-16 mt-5">
+      <div class="bg-purple-300 w-60 flex flex-col justify-center items-center p-7  rounded-xl">
+        <img class="h-20 mb-1" src="images/ic_box.svg" alt="" />
+        <h2 class="text-3xl font-medium mb-2">Starting</h2>
+        <p class="text-slate-600 text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          id modi nostrum aut quod error voluptatibus perferendis quisquam
+          facere autem.
+        </p>
       </div>
-    </main>
+      <div class="bg-purple-300 w-60 flex flex-col justify-center items-center p-7 rounded-xl">
+        <img class="h-20  mb-1" src="images/ic_add.svg" alt="" />
+        <h2 class="text-3xl font-medium mb-2">Mid-Step</h2>
+        <p class="text-slate-600 text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          id modi nostrum aut quod error voluptatibus perferendis quisquam
+          facere autem.
+        </p>
+      </div>
+      <div class="bg-purple-300 w-60 flex flex-col justify-center items-center p-7 rounded-xl">
+        <img class="h-20  mb-1" src="images/ic_flash.svg" alt="" />
+        <h2 class="text-3xl font-medium mb-2">Finalize</h2>
+        <p class="text-slate-600 text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          id modi nostrum aut quod error voluptatibus perferendis quisquam
+          facere autem.
+        </p>
+      </div>
+    </div>
+  </main>
+  <div class="notes h-80 w-full flex flex-col  justify-center items-center">
+    <h3 id="quotes" class="text-white w-3/4 flex text-3xl justify-center text-center"></h3> </br>
+    <span id="accentBackground" class="h-1 w-40 mb-5 rounded-xl "></span>
+    <h3 id="author" class="text-white text-3xl "> </h3>
+  </div>
 
-    <footer class="py-10 bg-purple-600 mt-8 grid md:grid-cols-3 place-items-center text-white px-20">
-      <div class="left-cont   my-2">
-        <h3 class="text-3xl">Terms & Conditions</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet molestiae explicabo corporis laborum deleniti porro maxime quisquam ad ab, praesentium expedita aperiam quis esse alias.</p>
-      </div>
-      <div class="mid-cont  my-2">
-        <h3 class="text-3xl">Community</h3>
-        <ul>
-          <li><a href="https://github.com/darksky4you">Github</a></li>
-          <li><a href="https://discord.com/">Discord</a></li>
-          <li><a href="https://facebook.com/">Facebook</a></li>
-          <li><a href="https://x.com/">Twitter</a></li>
-        </ul>
-      </div>
-      <div class="right-cont my-2">
-        <img class="w-48" src="/images/qr_code.png" alt="qr-code">
-      </div>
-    </footer>
-  </body>
+  <footer id="accentBackground" class="py-10 mt-8 grid md:grid-cols-3 place-items-center text-white px-20">
+    <div class="left-cont   my-2">
+      <h3 class="text-3xl">Terms & Conditions</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet molestiae explicabo corporis laborum
+        deleniti porro maxime quisquam ad ab, praesentium expedita aperiam quis esse alias.</p>
+    </div>
+    <div class="mid-cont  my-2">
+      <h3 class="text-3xl">Community</h3>
+      <ul>
+        <li><a href="https://github.com/darksky4you">Github</a></li>
+        <li><a href="https://discord.com/">Discord</a></li>
+        <li><a href="https://facebook.com/">Facebook</a></li>
+        <li><a href="https://x.com/">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="right-cont my-2">
+      <img class="w-48" src="/images/qr_code.png" alt="qr-code">
+    </div>
+  </footer>
+  <script>
+    // Function to load quotes from the JSON file
+    async function loadQuotes() {
+      try {
+        const response = await fetch('assets/quotes.json'); // Fetch the quotes.json file
+        const quotes = await response.json(); // Parse the JSON data
+        return quotes;
+      } catch (error) {
+        console.error('Error loading quotes:', error);
+        return [];
+      }
+    }
+
+    // Function to display a quote
+    function displayQuote(quotes, index) {
+      const quoteElement = document.getElementById('quotes');
+      const authorElement = document.getElementById('author');
+
+      const quote = quotes[index];
+      if (quote) {
+        quoteElement.textContent = quote.quote;  // Using "quote" key
+        authorElement.textContent = quote.author;  // Using "author" key
+      }
+    }
+
+    // Main function to rotate quotes randomly every 7 seconds
+    async function rotateQuotes() {
+      const quotes = await loadQuotes();
+
+      // Display the first random quote
+      displayQuote(quotes, Math.floor(Math.random() * quotes.length));
+
+      // Change quotes randomly every 7 seconds
+      setInterval(() => {
+        const randomIndex = Math.floor(Math.random() * quotes.length); // Random index
+        displayQuote(quotes, randomIndex);
+      }, 9000); // 7 seconds
+    }
+
+    // Start rotating quotes on page load
+    document.addEventListener('DOMContentLoaded', rotateQuotes);
+
+
+    // Function to show toast message
+    function showToast(message) {
+      const toast = document.createElement('div'); // Create a toast element
+      toast.textContent = message; // Set the toast message
+      toast.className = 'toast show'; // Add classes for styling
+      document.body.appendChild(toast); // Append to body
+
+      // Hide the toast after 3 seconds
+      setTimeout(() => {
+        toast.classList.remove('show');
+        document.body.removeChild(toast); // Remove from DOM
+      }, 3000);
+    }
+
+    // Function to clone Chrome tabs
+    function cloneTabs() {
+      const numTabs = prompt("How many Chrome tabs do you want to open?");
+      const tabsToOpen = parseInt(numTabs);
+
+      if (!isNaN(tabsToOpen) && tabsToOpen > 0) {
+        showToast(`Opening ${tabsToOpen} new tabs...`);
+
+        for (let i = 0; i < tabsToOpen; i++) {
+          window.open('https://www.google.com', '_blank'); // Opens a new tab to Google
+        }
+      } else {
+        showToast('Invalid input. Please enter a valid number.');
+      }
+    }
+
+    // Add event listener to the button
+    document.getElementById('clonenow').addEventListener('click', cloneTabs);
+
+
+
+  </script>
+</body>
+
 </html>
